@@ -40,6 +40,11 @@ h1, h2, h3, h4, h5, h6, p {
 .colored-text {
   color: @dark-primary-color;
 }
+
+hr {
+  color: @divider-color;
+}
+
 h1 {
   font-size: 30px;
 }
@@ -289,31 +294,32 @@ p {
     padding: 0.5em 1em;
     text-decoration: none;
     border-radius: 2px;
-    
-    .btn-primary, a.btn-primary {
-      color: @light-color;
-      background-color: @primary-color;
-      border: 1px solid @primary-color;
-    }
-    
-    .btn-secondary, a.btn-secondary {
-      color: @light-color;
-      background-color: @accent-color;
-      border: 1px solid @accent-color;
-      
-      .btn-transparent-light {
-        color: @light-color;
-        background: none;
-        border: 1px solid @light-color;
-      }
-      
-      .btn-transparent-dark {
-        color: @accent-color;
-        background: none;
-        border: 1px solid @accent-color;
-      }
-    }
   }
+    
+  .btn-primary, a.btn-primary {
+    color: @light-color;
+    background-color: @primary-color;
+    border: 1px solid @primary-color;
+  }
+    
+  .btn-secondary, a.btn-secondary {
+    color: @light-color;
+    background-color: @accent-color;
+    border: 1px solid @accent-color;
+  }
+    
+  .btn-transparent-light {
+    color: @light-color;
+    background: none;
+    border: 1px solid @light-color;
+  }
+      
+  .btn-transparent-dark {
+    color: @accent-color;
+    background: none;
+    border: 1px solid @accent-color;
+  }
+
   
   .fa {
     font-size: 150px;
@@ -385,50 +391,76 @@ p {
     &:visited {
       
     }
+  }
     
-    .box-btn {
-      &:disabled {
-        cursor: not-allowed;
-        opacity: 0.40;
-        -khtml-opacity: 0.40;
-        -moz-opacity: 0.40;
-      }
-      
-      .btn-primary, .btn-selected, a.btn-primary, a.btn-selected {
-        color: @light-color;
-        background-color: @primary-color;
-        border: 1px solid @light-color;
-      
-        &:hover, &:active, &:focus {
-          color: @primary-color;
-          background-color: @light-color;
-          border: 1px solid @primary-color;
-        }
-      }
-      
-      .btn-secondary, a.button-secondary {
-        &:hover, &:active, &:focus {
-          color: @light-color;
-          background-color: @primary-color;
-          border: 1px solid @primary-color;
-        }
-      }
-      
-      .btn-transparent-light {
-        &:hover, &:active, &:focus {
-          color: @primary-text-color;
-          background: @light-color;
-        }
-      }
-      
-      .btn-transparent-dark {
-        &:hover, &:active, &:focus {
-          color: @primary-color;
-          background: @accent-color;
-          border: 1px solid @primary-color;
-        }
-      }
+  .box-btn {
+    &:disabled {
+      cursor: not-allowed;
+      opacity: 0.40;
+      -khtml-opacity: 0.40;
+      -moz-opacity: 0.40;
     }
+  }
+      
+  .btn-primary, .btn-selected, a.btn-primary, a.btn-selected {
+    color: @light-color;
+    background-color: @primary-color;
+    border: 1px solid @light-color;
+      
+    &:hover, &:active, &:focus {
+      color: @primary-color;
+      background-color: @light-color;
+      border: 1px solid @primary-color;
+    }
+  }
+      
+  .btn-secondary, a.button-secondary {
+    &:hover, &:active, &:focus {
+      color: @light-color;
+      background-color: @primary-color;
+      border: 1px solid @primary-color;
+    }
+  }
+      
+  .btn-transparent-light {
+    &:hover, &:active, &:focus {
+      color: @primary-text-color;
+      background: @light-color;
+    }
+  }
+      
+  .btn-transparent-dark {
+    &:hover, &:active, &:focus {
+      color: @primary-color;
+      background: @accent-color;
+      border: 1px solid @primary-color;
+    }
+  }
+}
+
+.footer {
+  min-height: 50px;
+  text-align: center;
+  line-height: 50px;
+  
+  p {
+    font-size: 16px;
+  }
+}
+
+.footer-dark {
+  background-color: @primary-color;
+  
+  p {
+    color: @light-color;
+  }
+}
+
+.footer-light {
+  background-color: @light-color;
+  
+  p {
+    color: @primary-text-color;
   }
 }
 
