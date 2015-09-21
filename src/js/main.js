@@ -10,4 +10,6 @@ $(document).ready(function(){
     minFontSize: '20px',
     maxFontSize: '60px'
   });
+  
+  $('.mix-container').mixItUp();
 });

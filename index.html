@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="src/css/main.css">
     
   </head>
@@ -20,13 +21,13 @@
           <div class="navbar">
             <ul class="navbar-list">
               <li class="navbar-item">
-                <a class="navbar-link">Link 1</a>
+                <a class="navbar-link">About</a>
               </li>
               <li class="navbar-item">
-                <a class="navbar-link">Link 2</a>
+                <a class="navbar-link">Portfolio</a>
               </li>
               <li class="navbar-item">
-                <a class="navbar-link">Link 3</a>
+                <a class="navbar-link">Contact</a>
               </li>
             </ul>
           </div>
@@ -36,10 +37,10 @@
     <!-- END NAVIGATION -->
     
     <!-- TITLE SECTION -->
-    <section class="banner banner-fullscreen">
+    <section id="home-section" class="banner banner-fullscreen">
       <div class="container-fluid text-center">
         <div class="title-section animated centered">
-          <h1>Damen M. Smith</h1>
+          <h1 class="fitText">Damen M. Smith</h1>
           <hr>
           <h4>Web, Graphic, and Mobile Design</h4>
         </div>
@@ -48,7 +49,7 @@
     <!-- END TITLE SECTION -->
     
     <!-- ABOUT SECTION -->
-    <section>
+    <section id="about-section">
       <div class="container text-center">
         <div class="title-section animated">
           <h3>About Me</h3>
@@ -58,13 +59,13 @@
       </div>
       
       <div class="container">
-        <div class="col-4-lg col-4-md col-12-sm col-12-xs">
+        <div class="col-4-lg col-12-md col-12-sm col-12-xs">
           <div class="col">
             <article class="box">
-              <div class="box-feature feat-top-lg feat-top-md feat-left-sm feat-left-xs">
-                <i><!-- font awesome icon --></i>
+              <div class="box-feature feat-top-lg feat-feat-md feat-left-sm feat-left-xs">
+                <i class="fa fa-cloud-download"></i>
               </div>
-              <div class="box-content cont-right-sm cont-right-xs">
+              <div class="box-content cont-middle-lg cont-right-md cont-right-sm cont-right-xs text-center-lg text-left-md text-left-sm text-left-xs">
                 <div class="box-header">
                   <h5>Web Design</h5>
                 </div>
@@ -76,14 +77,14 @@
           </div>
         </div>
         
-        <div class="col-4-lg col-4-md col-12-sm col-12-xs">
+        <div class="col-4-lg col-12-md col-12-sm col-12-xs">
           <div class="col">
             <article class="box">
-              <div class="box-feature feat-top-lg feat-top-md feat-left-sm feat-left-xs">
-                <i><!-- font awesome icon --></i>
+              <div class="box-feature feat-top-lg feat-left-md feat-left-sm feat-left-xs">
+                <i class="fa fa-pencil-square-o"></i>
               </div>
-              <div class="box-content cont-right-sm cont-right-xs">
-                <div class="box-header">
+              <div class="box-content cont-middle-lg cont-right-md cont-right-sm cont-right-xs text-center-lg text-left-md text-left-sm text-left-xs">
+                <div class="box-header text-center-lg text-left-md text-left-sm text-left-xs">
                   <h5>Graphic Design</h5>
                 </div>
                 <div class="box-body">
@@ -94,13 +95,13 @@
           </div>
         </div>
         
-        <div class="col-4-lg col-4-md col-12-sm col-12-xs">
+        <div class="col-4-lg col-12-md col-12-sm col-12-xs">
           <div class="col">
             <article class="box">
-              <div class="box-feature feat-top-lg feat-top-md feat-left-sm feat-left-xs">
-                <i><!-- font awesome icon --></i>
+              <div class="box-feature feat-top-lg feat-left-md feat-left-sm feat-left-xs">
+                <i class="fa fa-mobile"></i>
               </div>
-              <div class="box-content cont-right-sm cont-right-xs">
+              <div class="box-content cont-middle-lg cont-right-md cont-right-sm cont-right-xs text-center-lg text-left-md text-left-sm text-left-xs">
                 <div class="box-header">
                   <h5>Mobile Design</h5>
                 </div>
@@ -115,7 +116,90 @@
     </section>
     <!-- END ABOUT SECTION -->
     
+    <!-- PORTFOLIO SECTION -->
+    <section id="portfolio-section">
+      <div class="container text-center">
+        <div class="title-section animated">
+          <h3>Portfolio</h3>
+          <hr>
+          <h6>Fusce pharetra blandit nibh eget suscipit. Donec vita.</h6>
+        </div>
+      </div>
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="col">
+              <div class="box controls text-center">
+                <button class="box-btn btn-primary" data-filter="all">ALL</button>
+                <button class="box-btn btn-primary" data-filter=".category-1">WEB DESIGN</button>
+                <button class="box-btn btn-primary" data-filter=".category-2">GRAPHIC DESIGN</button>
+                <button class="box-btn btn-primary" data-filter=".category-3">MOBILE DESIGN</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="container">
+        <div class="row mix-container">
+          <div class="col-4-lg col-6-md col-12-sm col-12-xs" data-myorder="1">
+            <div class="col mix category-1">
+              <img class="" src="http://gdurl.com/w8ZWp">
+            </div>
+          </div>
+          
+          <div class="col-4-lg col-6-md col-12-sm col-12-xs" data-myorder="2">
+            <div class="col mix category-1">
+              <img class="" src="http://gdurl.com/w8ZWp">
+            </div>
+          </div>
+          
+          <div class="col-4-lg col-6-md col-12-sm col-12-xs" data-myorder="3">
+            <div class="col mix category-1">
+              <img class="" src="http://gdurl.com/w8ZWp">
+            </div>
+          </div>
+          
+          <div class="col-4-lg col-6-md col-12-sm col-12-xs" data-myorder="4">
+            <div class="col mix category-2">
+              <img class="" src="http://gdurl.com/w8ZWp">
+            </div>
+          </div>
+          
+          <div class="col-4-lg col-6-md col-12-sm col-12-xs" data-myorder="5">
+            <div class="col mix category-2">
+              <img class="" src="http://gdurl.com/w8ZWp">
+            </div>
+          </div>
+          
+          <div class="col-4-lg col-6-md col-12-sm col-12-xs" data-myorder="6">
+            <div class="col mix category-3">
+              <img class="" src="http://gdurl.com/w8ZWp">
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+    </section>
+    <!-- END PORTFOLIO SECTION -->
+    
+    <!-- CONTACT SECTION -->
+    <section id="contact-section">
+      
+    </section>
+    <!-- END CONTACT SECTION -->
+    
+    <!-- BEGIN FOOTER SECTION -->
+    
+    <!-- END FOOTER SECTION -->
+    
     <!-- SCRIPTS -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/FitText.js/1.2.0/jquery.fittext.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.10/jquery.mixitup.min.js"></script>
+    <script type="text/javascript" src="src/js/main.js"></script>
     <!-- END SCRIPTS -->
   </body>
 </html>
