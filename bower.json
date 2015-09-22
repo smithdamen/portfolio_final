@@ -24,6 +24,7 @@
     "less": "~2.5.1",
     "masonry": "~3.3.2",
     "mixitup": "bower-mixitup#~2.0.4",
+    "owl.carousel": "OwlCarousel2#~2.0.0-beta.3",
     "progressbar.js": "~0.9.0",
     "waypoints": "~4.0.0"
   }

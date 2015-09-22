@@ -12,7 +12,7 @@ module.exports = function(grunt) {
             optimization: 2
           },
           files: {
-            "src/css/main.css": "src/less/*.less" // destination file and source file
+            "dist/css/main.css": "src/less/*.less" // destination file and source file
           }
         }
       },
@@ -22,14 +22,6 @@ module.exports = function(grunt) {
 			    src:'src/js/*.js',
 			    dest:'dist/js/main.min.js'
 			  }
-      },
-    
-      cssmin: {
-        target: {
-          files: {
-            'dist/css/main.min.css': ['src/css/*.css']
-          }
-        }
       }
     },
     
@@ -41,7 +33,7 @@ module.exports = function(grunt) {
           optimization: 2
         },
         files: {
-          "src/css/main.css": "src/less/*.less" // destination file and source file
+          "dist/css/main.css": "src/less/*.less" // destination file and source file
         }
       }
     },
@@ -53,13 +45,6 @@ module.exports = function(grunt) {
 			}
     },
     
-    cssmin: {
-      target: {
-        files: {
-          'dist/css/main.min.css': ['src/css/*.css']
-        }
-      }
-    },
     
     watch: {
       styles: {
@@ -73,5 +58,5 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('default', ['less', 'watch', 'uglify']);
-  grunt.registerTask('build', ['less', 'uglify', 'cssmin']);
+  grunt.registerTask('build', ['less', 'uglify']);
 };
