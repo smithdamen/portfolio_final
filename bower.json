@@ -18,11 +18,13 @@
   "dependencies": {
     "fittext": "*",
     "jquery": "~2.1.4",
+    "jquery-easing-original": "~1.3.2",
     "jquery.easing": "~1.3.1",
     "jquery.scrollTo": "~2.1.1",
     "less": "~2.5.1",
     "masonry": "~3.3.2",
     "mixitup": "bower-mixitup#~2.0.4",
-    "progressbar.js": "~0.9.0"
+    "progressbar.js": "~0.9.0",
+    "waypoints": "~4.0.0"
   }
 }
