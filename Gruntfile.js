@@ -14,15 +14,6 @@ module.exports = function(grunt) {
         }
       }
     },
-    watch: {
-      styles: {
-        files: ['less/*.less'], // which files to watch
-        tasks: ['less'],
-        options: {
-          nospawn: true
-        }
-      }
-    },
     uglify: {
       build:{
 			  src:'src/js/*.js',
@@ -33,6 +24,15 @@ module.exports = function(grunt) {
       target: {
         files: {
           'dist/css/main.min.css': ['src/css/*.css']
+        }
+      }
+    },
+    watch: {
+      styles: {
+        files: ['less/*.less'], // which files to watch
+        tasks: ['less'],
+        options: {
+          nospawn: true
         }
       }
     }
