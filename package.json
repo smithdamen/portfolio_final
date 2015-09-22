@@ -15,6 +15,7 @@
     "grunt-contrib-less": "latest",
     "grunt-contrib-uglify": "^0.9.2",
     "grunt-contrib-watch": "latest",
+    "grunt-html-validation": "^0.1.18",
     "jit-grunt": "^0.9.1",
     "jshint-stylish": "latest"
   },
