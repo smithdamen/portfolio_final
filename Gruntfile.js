@@ -2,6 +2,7 @@ module.exports = function(grunt) {
   require('jit-grunt')(grunt);
 
   grunt.initConfig({
+    
     less: {
       development: {
         options: {
@@ -14,12 +15,14 @@ module.exports = function(grunt) {
         }
       }
     },
+    
     uglify: {
       build:{
 			  src:'src/js/*.js',
 			  dest:'dist/js/main.min.js'
 			}
     },
+    
     cssmin: {
       target: {
         files: {
@@ -27,6 +30,7 @@ module.exports = function(grunt) {
         }
       }
     },
+    
     watch: {
       styles: {
         files: ['less/*.less'], // which files to watch

@@ -129,9 +129,12 @@
   }
 }
 
+.box, .box-content, .box-header, .box-body {
+  min-width: 100% !important;
+}
+
 .box {
   
-  width: 100%;
   overflow: hidden;
   
   .box-content {
@@ -140,7 +143,6 @@
     
     .box-header {
     
-      width: 100%;
       margin: 0;
       padding: 10px 15px;
     
@@ -154,6 +156,10 @@
       padding: 0 15px;
       text-align: justify;
     }
+  }
+  
+  .box-body {
+    min-width: 100%;
   }
   
   .box-image {
