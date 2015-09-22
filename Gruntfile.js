@@ -22,8 +22,21 @@ module.exports = function(grunt) {
           nospawn: true
         }
       }
+    },
+    uglify: {
+      build:{
+			  src:'src/js/*.js',
+			  dest:'dist/js/main.min.js'
+			}
+    },
+    cssmin: {
+      target: {
+        files: {
+          'dist/css/main.min.css': ['src/css/*.css']
+        }
+      }
     }
   });
 
-  grunt.registerTask('default', ['less', 'watch']);
+  grunt.registerTask('default', ['less', 'watch', 'uglify']);
 };
