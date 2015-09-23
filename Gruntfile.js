@@ -19,7 +19,7 @@ module.exports = function(grunt) {
     
       uglify: {
         build:{
-			    src:'src/js/*.js',
+			    src:'src/js/main.js',
 			    dest:'dist/js/main.min.js'
 			  }
       }
