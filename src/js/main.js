@@ -36,22 +36,15 @@ $(document).ready(function(){
   } , { offset : '70%' });
   
   //Owl-Carousel
-  $('owl-carousel').owlCarousel({
-    loop: true,
-    margin: 10,
-    nav: true,
-    responsive: {
-      0: {
-        items: 1
-      },
-      400: {
-        items: 3
-      },
-      1000: {
-        items: 5,
-        nav: true
-      }
-    }
+ 
+  $("#owl-example").owlCarousel({
+ 
+      autoPlay: 3000, //Set AutoPlay to 3 seconds
+ 
+      items : 4,
+      itemsDesktop : [1199,3],
+      itemsDesktopSmall : [979,3]
+ 
   });
 
 });
